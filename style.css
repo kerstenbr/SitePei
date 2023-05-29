@@ -48,12 +48,11 @@ body {
 {
     .logo-container_img{
         width: 100%;
-        height: 500px;
+        height: 100%;
     }
 }
 /* --------------------------------------------------- */
-
-.cartao-container{
+.pessoas-container{
     display: flex;
     gap: 19px;
     justify-content: center;
@@ -68,7 +67,7 @@ body {
 .pessoa{
     color: white;
     width: 340px;
-    height: 310px;
+    height: 320px;
     background-color: #ff6900;
     padding: 20px;
     border-radius: 5%;
@@ -84,6 +83,7 @@ body {
 }
 .descrição{
     font-size: 20px;
+    
 }
 
 /* --------------------------------------------------- */
