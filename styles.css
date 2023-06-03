@@ -46,6 +46,13 @@ header {
     cursor: pointer;
 }
 
+@media (max-width: 600px)
+{
+    .logo-navbar{
+        display: none;
+    }
+}
+
 .navbar-links{
     list-style: none;
 }
@@ -150,6 +157,7 @@ button:hover{
     font-size: 20px;
     
 }
+
 
 
 /* --------------------------------------------------- */
