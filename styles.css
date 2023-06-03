@@ -42,7 +42,8 @@ header {
 
 .logo-navbar {
     margin-right: auto;
-    width: 150px;
+    width: 100px;
+    height: 62px;
     cursor: pointer;
 }
 
@@ -159,11 +160,36 @@ button:hover{
 }
 
 
-
 /* --------------------------------------------------- */
 
 
-/* espaço para: seção sobre nós, o que fazemos e tal */
+.sobrenos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 30px;
+    gap: 50px;
+}
+
+@media (max-width: 890px)
+{
+    .sobrenos-imagem{
+        display: none;
+    }
+}
+
+.sobrenos-titulo {
+    text-align: center;
+    font-size: 40px;
+}
+
+.sobrenos-paragrafo {
+    padding: 50px;
+    width: 500px;
+    font-size: 26px;
+    text-align: center;
+}
 
 
 /* --------------------------------------------------- */
