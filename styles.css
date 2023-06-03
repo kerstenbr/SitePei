@@ -5,37 +5,93 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
-    
 }
 
 body {
     background-color: rgb(255, 255, 255);
-    
     display: flex;
-
     /* LEMBRETE: Teste abaixo*/
     flex-direction: column; /* creates rows out of the elements main and footer */
     height: 100vh; 
-    
     overflow-x: hidden; 
 }
 
 .main{
-    text-align: center;
-
+    /*text-align: center;*/
     /* LEMBRETE: Teste abaixo*/
     flex: 1 0 auto; /* allows the content to grow but not shrink */
 }
 
+
 /* --------------------------------------------------- */
 
+
+li, a {
+    color: rgb(255, 255, 255); /* TODO: trocar a cor */
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #ff6900;
+}
+
+.logo-navbar {
+    margin-right: auto;
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar-links{
+    list-style: none;
+}
+
+.navbar-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navbar-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-links li a:hover {
+    /* color: rgb(255, 255, 255); */ 
+    text-shadow: 0px 3px #272727;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(254, 255, 255, 1);
+    color: #ff6900;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(254, 255, 255, 0.8);
+}
+
+
+
+/* --------------------------------------------------- */
+
+
 .logo-container{
+    
     background-image: url(img/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 60vh;
     margin-bottom: 50px;
+    text-align: center;
 }
 .logo-container_img{
     
@@ -43,7 +99,7 @@ body {
     height: 500px
 }
 
-/* LEMBRETE: Fall pica */
+/* LEMBRETE: O Fall é pica */
 @media (max-width: 600px)
 {
     .logo-container_img{
@@ -51,8 +107,13 @@ body {
         height: 100%;
     }
 }
+
+
 /* --------------------------------------------------- */
+
+
 .pessoas-container{
+    text-align: center;
     display: flex;
     gap: 19px;
     justify-content: center;
@@ -86,15 +147,15 @@ body {
     
 }
 
-/* --------------------------------------------------- */
-
-.fazemos-container{
-    background-color: aqua; /* CONTINUAR AQUI!, esse aqui será tipo um "sobre nós", colocar o que fazemos no setor, homologação, melhorias etc */
-    width: 100vw;
-    height: 100vh;
-}
 
 /* --------------------------------------------------- */
+
+
+/* espaço para: seção sobre nós, o que fazemos e tal */
+
+
+/* --------------------------------------------------- */
+
 
 .footer-container{
     background-color: #ff6900;
