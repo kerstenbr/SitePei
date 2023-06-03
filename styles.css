@@ -29,13 +29,14 @@ body {
 li, a {
     color: rgb(255, 255, 255); /* TODO: trocar a cor */
     text-decoration: none;
+    
 }
 
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 10%;
     background-color: #ff6900;
 }
 
@@ -50,11 +51,13 @@ header {
 }
 
 .navbar-links li {
+    font-size: 20px;
     display: inline-block;
     padding: 0px 20px;
 }
 
 .navbar-links li a {
+    
     transition: all 0.3s ease 0s;
 }
 
@@ -64,6 +67,7 @@ header {
 }
 
 button {
+    font-size: 20px;
     margin-left: 20px;
     padding: 9px 25px;
     background-color: rgba(254, 255, 255, 1);
