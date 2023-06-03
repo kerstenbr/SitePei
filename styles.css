@@ -170,6 +170,8 @@ button:hover{
     flex-wrap: nowrap;
     padding: 30px;
     gap: 50px;
+    background-color: #ff6900;
+    color: white;
 }
 
 @media (max-width: 890px)
