@@ -169,7 +169,7 @@ button:hover{
     justify-content: center;
     flex-wrap: nowrap;
     padding: 30px;
-    gap: 50px;
+    gap: 70px;
     background-color: #ff6900;
     color: white;
 }
@@ -193,6 +193,10 @@ button:hover{
     text-align: center;
 }
 
+
+/* --------------------------------------------------- */
+
+/* prox seção */
 
 /* --------------------------------------------------- */
 
