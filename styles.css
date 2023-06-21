@@ -10,8 +10,8 @@
 body {
     background-color: rgb(255, 255, 255);
     display: flex;
-    /* LEMBRETE: Teste abaixo*/
-    flex-direction: column; /* creates rows out of the elements main and footer */
+    /* LEMBRETE: Site está em Coluna agora, por causa da config abaixo!*/
+    flex-direction: column;
     height: 100vh; 
     overflow-x: hidden; 
 }
@@ -27,7 +27,7 @@ body {
 
 
 li, a {
-    color: rgb(255, 255, 255); /* TODO: trocar a cor */
+    color: rgb(255, 255, 255);
     text-decoration: none;
     
 }
@@ -36,14 +36,14 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 10%;
+    padding: 2px 10%;
     background-color: #ff6900;
 }
 
 .logo-navbar {
     margin-right: auto;
-    width: 66px;
-    height: 62px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
 }
 
@@ -86,7 +86,7 @@ header {
 }
 
 .header-botao:hover{
-    width: 124px;
+    /* width: 124px; */
     background-color: rgba(254, 255, 255, 0.8);
 }
 
@@ -99,7 +99,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 50vh;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -129,13 +129,33 @@ header {
     gap: 19px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 40px; /* LEMBRETE: estava como margin bottom */
+    margin-bottom: 40px;
 }
 
 .foto-pessoa{
-    width: 100px;
+    /* width: 100px;
     height: 100px;
+    border-radius: 50%; */
+
+    /* ESSA PARTE PEGUEI DE UM CODEPEN: https://codepen.io/t_afif/pen/JjLVLPL  */
+    --s: 100px;   /* the size of the image */
+    --b: 5px;     /* the border thickness*/
+    --g: 5px;    /* the gap */
+    --c: #fdfdfd; /* the color */
     border-radius: 50%;
+
+    width: var(--s);
+    /* aspect-ratio: 1; */
+    /* outline: calc(var(--s)/2) solid #0009; */
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+/* ESSA PARTE PEGUEI DE UM CODEPEN: https://codepen.io/t_afif/pen/JjLVLPL  */
+.foto-pessoa:hover{
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
 }
 
 .pessoa{
@@ -282,8 +302,8 @@ header {
     transition: all 0.3s ease 0s;
 }
 .areatecnica-button:hover{
-    width: 124px;
-    height: 50px;
+    /* width: 124px;
+    height: 50px; */
     background-color: rgba(254, 255, 255, 0.8);
 }
 
