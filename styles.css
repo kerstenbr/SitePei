@@ -226,7 +226,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 30px;
     gap: 70px;
     background-color: #ff6900;
@@ -259,6 +259,8 @@ header {
 
 .areatecnica-imagem{
     /* border-radius: 5%; */
+    width: 400px;
+    height: 400px;
 }
 
 .areatecnica-botao {
