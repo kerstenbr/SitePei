@@ -5,7 +5,7 @@ document.getElementById("radio1").checked = true;
     
 setInterval(function(){
     nextImage()
-}, 5000)
+}, 10000) // <- Aqui controla o tempo de virado do slider, 1000ms = 10s
 
 function nextImage(){
     count++
@@ -14,5 +14,4 @@ function nextImage(){
     }
 
     document.getElementById("radio"+count).checked = true;
-
 }
