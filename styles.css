@@ -42,7 +42,7 @@ header {
     /* Bruno deu a dica de como deixar certinho a navbar fixada */
     position: fixed;
     width: 100%;
-    z-index: 12;
+    z-index: 9999;
 }
 
 .logo-navbar {
@@ -88,11 +88,12 @@ header {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    box-shadow: 0 2px 1px rgba(0,0,0,.1);
 }
 
 .header-botao:hover{
-    /* width: 124px; */
-    background-color: rgba(254, 255, 255, 0.8);
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    /* background-color: rgba(254, 255, 255, 0.8); */
 }
 
 
@@ -194,49 +195,46 @@ header {
 
 
 /* --------------------------------------------------- */
-
-
-.sobrenos-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    padding: 30px;
-    gap: 70px;
-    background-color: #ff6900;
-    color: white;
-}
-
-.sobrenos-imagem{
-    border-radius: 5%;
-}
-
-@media (max-width: 890px)
-{
-    .sobrenos-imagem{
-        display: none;
-    }
-}
-
-.sobrenos-titulo {
-    text-align: center;
-    font-size: 40px;
-}
-
-.sobrenos-paragrafo {
-    padding: 50px;
-    width: 500px;
-    font-size: 26px;
-    text-align: center;
-}
-
-
-/* --------------------------------------------------- */
 /* https://www.youtube.com/watch?v=BpzyuuPIEaQ */
 
 
+.texto-slider{
+    /* width: 500px; */
+    display: block;
+    margin-bottom: 15px;
+    /* align-items: center; */
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.slider-botao {
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.slider-button{
+    gap: 50px;
+    font-size: 20px;
+    /* margin-left: 20px; */
+    padding: 9px 25px;
+    background-color: #00968F;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 2px 1px rgba(0,0,0,.1)
+}
+
+.slider-button:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.3)
+    /* background-color: rgba(254, 255, 255, 0.8); */
+}
 .slider-container{
-    padding: 50px;
+    padding: 20px 0px 50px 0px;
+    background-color: #ff6900;
 }
 .slider{
     margin: 0 auto;
@@ -340,6 +338,54 @@ header {
 /* --------------------------------------------------- */
 
 
+.sobrenos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 30px;
+    gap: 70px;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.sobrenos-texto{
+    background-color: #ff6900;
+    border-radius: 5%;
+    padding: 29px 0px 0px 0px;
+    width: 500px;
+    height: 370px;
+}
+
+.sobrenos-imagem{
+    border-radius: 5%;
+    width: 500px;
+    height: 370px;
+}
+
+@media (max-width: 890px)
+{
+    .sobrenos-imagem{
+        display: none;
+    }
+}
+
+.sobrenos-titulo {
+    text-align: center;
+    font-size: 40px;
+}
+
+.sobrenos-paragrafo {
+    padding: 50px;
+    width: 500px;
+    font-size: 26px;
+    text-align: center;
+}
+
+
+/* --------------------------------------------------- */
+
+
 .areatecninca-container{
     display: flex;
     align-items: center;
@@ -392,18 +438,19 @@ header {
     font-size: 20px;
     /* margin-left: 20px; */
     padding: 9px 25px;
-    background-color: rgba(254, 255, 255, 1);
-    color: #ff6900;
+    background-color: #00968F;
+    color: #ffffff;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    box-shadow: 0 2px 1px rgba(0,0,0,.1);
 }
 .areatecnica-button:hover{
-    /* width: 124px;
-    height: 50px; */
-    background-color: rgba(254, 255, 255, 0.8);
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    /* background-color: rgba(254, 255, 255, 0.8); */
 }
+
 
 /* --------------------------------------------------- */
 
