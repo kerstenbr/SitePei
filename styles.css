@@ -38,6 +38,10 @@ header {
     align-items: center;
     padding: 2px 10%;
     background-color: #ff6900;
+
+    /* Bruno deu a dica de como deixar certinho a navbar fixada */
+    position: fixed;
+    width: 100%;
 }
 
 .logo-navbar {
