@@ -42,6 +42,7 @@ header {
     /* Bruno deu a dica de como deixar certinho a navbar fixada */
     position: fixed;
     width: 100%;
+    z-index: 12;
 }
 
 .logo-navbar {
@@ -109,7 +110,6 @@ header {
 }
 
 .logo-container_img{
-    
     width: 500px;
     height: 500px
 }
@@ -235,6 +235,9 @@ header {
 /* https://www.youtube.com/watch?v=BpzyuuPIEaQ */
 
 
+.slider-container{
+    padding: 50px;
+}
 .slider{
     margin: 0 auto;
     width: 800px;
@@ -255,6 +258,7 @@ header {
 .slide{
     width: 25%;
     position: relative;
+    transition: 2s;
 }
 
 .slide img{
