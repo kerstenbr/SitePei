@@ -100,7 +100,7 @@ header {
 /* --------------------------------------------------- */
 
 
-.logo-container{
+.background{
     background-image: url(img/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,9 +110,19 @@ header {
     text-align: center;
 }
 
+.logo-container{
+
+
+    /* logo nova abaixo
+    display: flex; 
+    justify-content: center; */
+}
+
 .logo-container_img{
     width: 500px;
     height: 500px;
+    /* logo nova abaixo
+    margin-top: 150px */
 }
 
 /* LEMBRETE: O Fall é pica */
@@ -190,7 +200,6 @@ header {
 
 .descrição{
     font-size: 20px;
-    
 }
 
 
