@@ -110,13 +110,10 @@ header {
     text-align: center;
 }
 
-.logo-container{
-
-
-    /* logo nova abaixo
+/* .logo-container{
     display: flex; 
-    justify-content: center; */
-}
+    justify-content: center;
+} */
 
 .logo-container_img{
     width: 500px;
@@ -430,11 +427,11 @@ header {
     text-align: center;
 }
 
-.areatecnica-imagem{
-    /* border-radius: 5%; */
-    /* width: 500px;
-    height: 400px; */
-}
+/* .areatecnica-imagem{
+    border-radius: 5%;
+    width: 500px;
+    height: 400px;
+} */
 
 .areatecnica-botao {
     padding: 10px;
